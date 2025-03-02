@@ -1,0 +1,82 @@
+/*
+Description:  theme for Classes
+Author:       J Neathawk
+Author URI:   https://knighthawk0811.github.io
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/*--------------------------------------------------------------
+# Universal
+--------------------------------------------------------------*/
+html * {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav ul {
+    background-color: lightblue;
+    list-style-type: square;
+    margin: 0;
+}
+nav ul li::marker {
+    color: blue;
+}
+nav a:visited {
+    color: purple;
+}
+nav a:hover {
+    color: orange;
+}
+nav a:active {
+    color: green;
+}
+
+/*--------------------------------------------------------------
+# Header Area
+--------------------------------------------------------------*/
+header {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
+main {
+    width: calc(70% - 1px);
+    float: left;
+    padding: 1rem;
+    border-right: 1px solid black;
+    height: 100%;
+}
+
+/* This is pretty jank, but I don't know how to get all the ads
+on the right side of the verticle line otherwise */
+aside {
+    width: 30%;
+    float: right;
+    position: relative;
+    right: -300px; /* I moved it to align with the verticle line */
+    padding-left: 10px;
+    top: -400px; /* Then I had to move it up to align with the nav area */
+}
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
