@@ -61,19 +61,19 @@ nav a:hover {
 # Content Area
 --------------------------------------------------------------*/
 main {
-    width: 66%;
+    width: 65%;
     float: left;
     padding: 1rem;
     border-right: 2px solid gray;
 }
 
 aside {
-    width: 34%;
+    width: 30%;
     float: right;
     padding: 1rem;
+    margin-left: 20px;
 }
 
-/* Adjusting Articles */
 article {
     margin-bottom: 1rem;
 }
