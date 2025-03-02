@@ -1,12 +1,3 @@
-/*
-Description:  theme for Classes
-Author:       J Neathawk
-Author URI:   https://knighthawk0811.github.io
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.html
-*/
-
-
 /*--------------------------------------------------------------
 # Universal
 --------------------------------------------------------------*/
@@ -19,65 +10,95 @@ html * {
 --------------------------------------------------------------*/
 body {
     margin: 0;
-}
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-nav ul {
-    list-style-type: square; /* Square Bullet shapes */
-}
-
-nav ul li {
-    color: rgb(100, 100, 255); /* Bullet color different from text */
-}
-
-nav a {
-    color: rgb(50, 50, 50); /* Link color */
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: rgb(255, 100, 100); /* Hover color */
-}
-
-nav a:visited {
-    color: rgb(150, 50, 150); /* Visited color */
-}
-
-nav a:active {
-    color: rgb(0, 150, 0); /* Active color */
+    background-color: #b0d0ff;
+    font-family: Arial, sans-serif;
 }
 
 /*--------------------------------------------------------------
 # Header Area
 --------------------------------------------------------------*/
 header {
-    background-color: rgb(50, 50, 150);
+    background-color: #003366;
     padding: 1rem;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav ul {
+    list-style-type: disc;
+    color: red;
+}
+
+nav ul li {
+    color: black;
+}
+
+nav ul li::marker {
+    color: red;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
 }
 
 /*--------------------------------------------------------------
 # Content Area
 --------------------------------------------------------------*/
 main {
-    width: calc(70% - 1px);
+    width: 66%;
     float: left;
     padding: 1rem;
-    border-right: 1px solid rgb(200, 200, 200);
+    border-right: 2px solid gray;
 }
 
 aside {
-    width: 30%;
+    width: 34%;
     float: right;
+    padding: 1rem;
+}
+
+/* Adjusting Articles */
+article {
+    margin-bottom: 1rem;
+}
+
+article h2, article h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+aside img {
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------
 # Footer Area
 --------------------------------------------------------------*/
 footer {
-    background-color: rgb(50, 50, 150);
+    background-color: #003366;
     text-align: center;
     padding: 1rem;
+    color: white;
     clear: both;
 }
