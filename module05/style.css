@@ -1,0 +1,83 @@
+/*
+Description:  theme for Classes
+Author:       J Neathawk
+Author URI:   https://knighthawk0811.github.io
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+
+/*--------------------------------------------------------------
+# Universal
+--------------------------------------------------------------*/
+html * {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
+body {
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav ul {
+    list-style-type: square; /* Square Bullet shapes */
+}
+
+nav ul li {
+    color: rgb(100, 100, 255); /* Bullet color different from text */
+}
+
+nav a {
+    color: rgb(50, 50, 50); /* Link color */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(255, 100, 100); /* Hover color */
+}
+
+nav a:visited {
+    color: rgb(150, 50, 150); /* Visited color */
+}
+
+nav a:active {
+    color: rgb(0, 150, 0); /* Active color */
+}
+
+/*--------------------------------------------------------------
+# Header Area
+--------------------------------------------------------------*/
+header {
+    background-color: rgb(50, 50, 150);
+    padding: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
+main {
+    width: calc(70% - 1px);
+    float: left;
+    padding: 1rem;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+aside {
+    width: 30%;
+    float: right;
+}
+
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
+footer {
+    background-color: rgb(50, 50, 150);
+    text-align: center;
+    padding: 1rem;
+    clear: both;
+}
