@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Element Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <figure>
+        <picture>
+            <!-- Mobile JPEG (Original Vertical ~1080p - 972x1728) -->
+            <source srcset="Boba-Fett-Vert.jpeg" type="image/jpeg" media="(max-width: 600px)">
+            
+            <!-- Mobile WebP (Fallback B&W Vertical ~1080p - 972x1728) -->
+            <source srcset="Boba-Fett-Vert.webp" type="image/webp" media="(max-width: 600px)">
+            
+            <!-- Desktop JPEG (Original 4K - 3840x2160) -->
+            <source srcset="Boba-Fett.jpeg" type="image/jpeg" media="(min-width: 601px)">
+
+            <!-- Desktop WebP (Fallback B&W 4K - 3840x2160) -->
+            <source srcset="Boba-Fett.webp" type="image/webp" media="(min-width: 601px)">
+            
+            <!-- Default Fallback Image -->
+            <img src="Boba-Fett.jpeg" alt="Boba Fett Image">
+        </picture>
+        <figcaption>Boba Fett is a bounty hunter!</figcaption>
+    </figure>
+</body>
+</html>
